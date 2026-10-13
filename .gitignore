@@ -1,0 +1,14 @@
+# build output
+*.o
+*.obj
+*.exe
+*.out
+netsim
+build/
+# generated results
+results_live.csv
+*.csv
+# editor and OS files
+.vscode/
+.idea/
+.DS_Store
