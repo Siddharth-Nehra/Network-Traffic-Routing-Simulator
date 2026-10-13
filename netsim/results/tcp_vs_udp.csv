@@ -1,0 +1,6 @@
+kind,id,src,dst,type,sent,recv,drop,pdr,avg_lat_ms,min_ms,max_ms,throughput_kbps,jitter_ms,cwnd,path,cost,reroute_s,settled,iterations,runtime_us,algo
+global,-1,-1,-1,tcp_vs_udp,707,485,221,68.5997,265.636509,52.000000,291.111111,242.500000,7.020459,0,0 -> 1 -> 2,2.000000,-1.000000,4,0,0,dijkstra
+flow,0,0,2,tcp,369,193,175,52.3035,262.323178,52.000000,281.440000,96.500000,9.251111,1.0000,,,,,
+flow,1,0,2,cbr,338,292,46,86.3905,267.826484,52.000000,291.111111,146.000000,9.041619,1.0000,,,,,
+compare,dijkstra,-1,-1,dijkstra,0,0,0,0,0,0,0,0,0,0,0 -> 1 -> 2,2.000000,-1,4,0,0,dijkstra
+compare,bellman,-1,-1,bellman-ford,0,0,0,0,0,0,0,0,0,0,0 -> 1 -> 2,2.000000,-1,0,2,0,bellman-ford

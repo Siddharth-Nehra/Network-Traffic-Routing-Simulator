@@ -1,0 +1,7 @@
+kind,id,src,dst,type,sent,recv,drop,pdr,avg_lat_ms,min_ms,max_ms,throughput_kbps,jitter_ms,cwnd,path,cost,reroute_s,settled,iterations,runtime_us,algo
+global,-1,-1,-1,heavy_traffic,678,310,368,45.7227,240.344086,50.000000,370.000000,155.000000,178.381877,0,0 -> 2,1.000000,-1.000000,4,2,1,bellman-ford
+flow,0,0,2,cbr,282,96,186,34.0426,344.444444,50.000000,370.000000,48.000000,11.789474,1.0000,,,,,
+flow,1,0,2,cbr,282,100,182,35.4610,346.000000,90.000000,370.000000,50.000000,10.505051,1.0000,,,,,
+flow,2,3,1,bursty,114,114,0,100.0000,60.000000,60.000000,60.000000,57.000000,0.000000,1.0000,,,,,
+compare,dijkstra,-1,-1,dijkstra,0,0,0,0,0,0,0,0,0,0,0 -> 2,1.000000,-1,4,0,1,dijkstra
+compare,bellman,-1,-1,bellman-ford,0,0,0,0,0,0,0,0,0,0,0 -> 2,1.000000,-1,0,2,1,bellman-ford

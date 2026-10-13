@@ -1,14 +1,6 @@
-# build output
 *.o
-*.obj
-*.exe
-*.out
-netsim
-build/
-# generated results
-results_live.csv
-*.csv
-# editor and OS files
-.vscode/
-.idea/
+*.dSYM/
 .DS_Store
+netsim/netsim
+netsim/tests/test_core
+netsim/tests/test_asan
